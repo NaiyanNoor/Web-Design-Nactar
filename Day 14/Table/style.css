@@ -1,0 +1,67 @@
+.color{
+background-color:rgb(250, 97, 209);
+padding:20px;
+}
+
+.color a{
+text-decoration:none;
+margin-right:80px;
+psdding:10px;
+}
+
+.color a:hover{
+color:white;
+background-color:green;
+font-weight:bold;
+}
+
+
+table,td,th {
+border: 2px solid white;
+border-collapse:collapse;
+height:50px;
+}
+
+table{
+background-color:rgb(124, 187, 194);
+height:120px;
+}
+
+th{
+background-color:rgb(240, 204, 89);
+height:50px;
+}
+
+td{
+height:50px;
+text-align:center;
+
+}
+
+td:hover{
+background-color:red;
+color:white;
+font-size-20px;
+}
+
+th:hover{
+background-color:rgb(49, 43, 110);
+color:white;
+font-size-20px;
+}
+
+
+tr:nth-child(even){
+background-color:rgb(182, 155, 204);
+}
+
+.box p:hover{
+color:red;
+background-color:green;
+}
+
+.box p:nth-child(even){
+background-color:pink;
+}
+
+
