@@ -1,0 +1,17 @@
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.tour{
+color:orange;
+}
+
+.right a{
+margin-right:10px;
+text-decoration:none;
+color:black;
+
+}
