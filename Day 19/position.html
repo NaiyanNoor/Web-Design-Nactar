@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{
+            height: 300px;
+        }
+.card{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    background-color: aqua;
+    transition: all ease 1s;
+}
+.circle{
+    position: absolute;
+    top:  -50px;
+    right: -50px;
+    /* transform: translateY(-50%) translateX(-50%); */
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: blueviolet;
+ 
+    border: 10px solid white;
+    transition: all ease 1s;
+}
+.card:hover .circle{
+    transform: rotate(360deg);
+}
+.card:hover{
+    transform: scale(1.2);
+}
+    </style>
+</head>
+<body>
+
+<div class="h"></div>
+<div class="card">
+<div class="circle">
+    <img src="image/face.png" height="100%" width="100%" alt="">
+</div>
+</div>
+
+</body>
+</html>
