@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .grid{
+        display: grid;
+         grid-template-columns: repeat(12,1fr);
+         gap: 10px;
+    }
+    .grid img{
+        height: 150px;
+        width: 100%;    
+    }
+
+    .a,.b{
+        grid-column: span 6;
+        filter: saturate(0);
+    }
+    .a:hover,.b:hover{
+        filter: saturate(1);
+    }
+
+    .c{
+        grid-column: span 4;
+    }
+    .d{
+        grid-column: span 5;
+    }
+    .e{
+        grid-column: span 3;
+    }
+    .f{
+        grid-column: span 5;
+    }
+    .g{
+        grid-column: span 7;
+    }
+
+    .box{
+        height: 250px;
+        width: 250px;
+        background-color: blue;
+        margin-bottom: 500px;
+        box-shadow: 50px 50px 20px 15px rgba(153, 174, 71, 0.5);
+    }
+
+   </style>
+</head>
+<body>
+    <div class="grid">
+        <img class="a" src="banner.jpg" alt="">
+        <img class="b" src="banner.jpg" alt="">
+        <img class="c" src="banner.jpg" alt="">
+        <img class="d" src="banner.jpg" alt="">
+        <img class="e" src="banner.jpg" alt="">
+        <img class="f" src="banner.jpg" alt="">
+        <img class="g" src="banner.jpg" alt="">
+
+    </div>
+
+   <div class="h">
+    
+   </div> 
+    <div class="box">
+
+    </div>
+    <div class="h">
+
+    </div>
+
+    
+</body>
+</html>
