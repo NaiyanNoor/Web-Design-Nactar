@@ -1,0 +1,82 @@
+.banner-slide{
+    background-image: url(images/img10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-heading{
+    text-align: center;
+    font-weight: 500;
+    color: orange;
+    margin: 0 auto;
+    margin-top: 80px;
+   border-top: 2px solid black ;
+   border-bottom: 2px solid black ;
+   width: fit-content;
+   
+}
+
+.sliders{
+    margin-bottom: 20px;
+}
+
+.section-heading h3 span{
+    color: black;
+}
+
+.menu-card{
+    width: 300px;
+    border: 1px solid orange;
+    min-height:400px ;
+    background-color: #d0d0d0;
+   
+}
+.menu-card img{
+    height: 200px;
+    width: 100%;
+}
+.menu-content{
+    padding: 10px;
+}
+.menu-content h3{
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+.feedback-card{
+    border-radius: 15px;
+    padding: 20px;
+    /* height: 300px; */
+    width: 450px;
+    background-color: beige;
+}
+.feedback-card i {
+    font-size: 70px;
+    margin: 10px;
+}
+.feedback-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.feedback-content img{
+    border-radius: 50%;
+}
+.feedback-content h3{
+    font-size: 20px;
+
+}
+.feedback-content h5{
+    font-size: 14px;
+}
+
+.customer-feedback-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
