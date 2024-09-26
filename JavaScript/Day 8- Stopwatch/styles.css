@@ -1,0 +1,78 @@
+body {
+    background: #4e5053;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+    font-family: 'Courier';
+}
+
+.name {
+    animation: change_color 5s normal infinite;
+    background-color: rgba(131, 131, 131, 0.102);
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.726);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+@keyframes change_color {
+    0% {
+        color: rgba(131, 131, 131, 0.102);
+    }
+
+    50% {
+        color: rgba(255, 0, 0, 0.5);
+    }
+
+    100% {
+        color: rgba(131, 131, 131, 0.102)
+    }
+}
+
+.watch {
+    border: 1px solid #a9a9a9;
+    width: 262px;
+    height: 252px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 30px;
+    box-shadow: 0 10px 50px rgba(246, 180, 0, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+button {
+    background-color: #474748;
+    padding: 10px 38px;
+    border: 1px solid #a9a9a9;
+    border-radius: 28px;
+    color: #fff;
+    transition: all .2s ease;
+    outline: 0;
+}
+
+button:not(:last-child) {
+    margin-right: 15px;
+}
+
+button:hover,
+button:focus {
+    border-color: #F6B400;
+    color: #F6B400;
+    box-shadow: 0px 4px 27px -12px #F6B400;
+}
