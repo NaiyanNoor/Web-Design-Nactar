@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+       <h1 id="hid">hello</h1>
+       <p>Para in heading</p>
+    </div>
+    <div>
+        <p class="para">p1</p>
+        <p class="para">p2</p>
+        <p class="para">p3</p>
+        <input type="text" id="fname" placeholder="Enter First Name">
+        <input type="text" id="lname" placeholder="Enter last Name">
+        <button onclick="receivedata()" style="color: rgb(243, 228, 228); background-color: rgb(164, 50, 50);">Send</button>
+
+    </div>
+    <br>
+    <div>
+        <img src="frutika.jpg" alt="" width="300px" height="350px" id="imageshow">
+        <button onclick="Changeit()" style="color: rgb(243, 228, 228); background-color: rgb(169, 37, 37);">Change Picture</button>
+    </div>
+<script>
+    var htag=document.getElementById("hid")
+    htag.innerHTML="Change Heading By JavaScript"
+    var ptag=document.getElementsByClassName("para")
+    var ptags=document.getElementsByTagName("p")
+    ptag[0].innerHTML="Heading Change By JavaScript"
+    htag.style.color="green"
+    console.log(ptag)
+    console.log(ptags)
+    
+    function receivedata(){
+        var fname=document.getElementById("fname")
+        var lname=document.getElementById("lname")
+
+        alert(fname.value+" "+lname.value)
+    }
+    function Changeit(){
+        var pic=document.getElementById("imageshow")
+        pic.src="Mango.jpg"
+    }
+    </script>    
+</body>
+</html>
