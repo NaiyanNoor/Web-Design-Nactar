@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="unchecBox()">
+    <p id="passid"></p>
+    UpperCase<input type="checkbox" value="upper" onclick="generatePassupper()" id="upper">
+    LowerCase<input type="checkbox" value="lower" onclick="generatePassLower()" id="lower">
+    <script>
+        var pass=document.getElementById("passid").innerHTML;
+
+        var char='';
+        var small="abcdefghijklmnopqrstuvwxyz";
+        var capital="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var digit="0123456789"
+        var special="!@#$%^&*()";
+        var i=0
+        var charlen=char.length;
+        // alert()
+        function unchecBox(){
+            document.getElementById("upper").checked=false;   
+            document.getElementById("lower").checked=false; 
+        }
+        function generatePassupper(){
+                var upperid=document.getElementById("upper")               
+                if(upperid.checked==true){
+                    char=capital; 
+                    generatePWD()                
+                }
+                else{
+                    char=small;
+                    generatePWD() 
+                }
+                
+        }
+        function generatePassLower(){
+            var lowerid=document.getElementById("lower")
+            if(lowerid.checked==true){
+                    char=small;  
+                    generatePWD()               
+                }
+            else{
+                char=capital
+                generatePWD()  
+            }
+               
+        } 
+       function generatePWD(){
+            pass='';
+            var charlen=char.length;
+                for(i=0;i<8;i++)
+                    {
+                        var x=parseInt(Math.random()*charlen);
+                        pass+=char[x]
+                    }
+            document.getElementById("passid").innerHTML=pass
+       }
+      
+
+    </script>
+</body>
+</html>
