@@ -1,0 +1,51 @@
+section {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+  }
+  
+  .image {
+    width: 400px;
+    height: 400px;
+    animation: slide 0.5s linear;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #leftArrow {
+    all: unset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    color: #05d9e8;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  #rightArrow {
+    all: unset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem;
+    color: #05d9e8;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  #leftArrow:hover,
+  #rightArrow:hover {
+    background: rgb(0, 0, 0, 0.2);
+  }
