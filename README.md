@@ -25,7 +25,7 @@ Steps to run the project locally:
 bash
 Copy code
 # Clone the repository
-git clone https://github.com/your-username/your-project-name.git
+git clone https:https://github.com/NaiyanNoor/Web-Design-Nactar
 
 # Navigate to the project directory
 cd your-project-name
