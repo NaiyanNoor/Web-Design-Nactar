@@ -1,0 +1,66 @@
+/*team */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.team-h1{
+    text-align: center;
+
+}
+
+.profile-card {
+    background-color: rgb(211, 233, 220);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    margin: 0 8px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 100%;
+    }
+}
+
+/*team End*/
