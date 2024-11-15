@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Food Menu Grid */
+.food-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px;
+    justify-items: center;
+}
+
+.food-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.food-info h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.food-info p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Hover effect for food items */
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.food-item:hover .food-info {
+    background-color: #f1f1f1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .food-menu {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+
+    .food-item img {
+        height: 180px; /* Reduce image height for medium screens */
+    }
+
+    .food-info h3 {
+        font-size: 20px;
+    }
+
+    .food-info p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .food-menu {
+        grid-template-columns: 1fr; /* Stack food items vertically on small screens */
+    }
+
+    .food-item img {
+        height: 150px; /* Further reduce image height on small screens */
+    }
+
+    .food-info h3 {
+        font-size: 18px;
+    }
+
+    .food-info p {
+        font-size: 14px;
+    }
+}
